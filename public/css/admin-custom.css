@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .row .from-control_ratio {
+        width: 100% !important;
+    }
+}
+
+table tbody tr td:last-child a:not(:first-child) {
+    margin-left: 6px;
+}
+
+@keyframes loading_rotate {
+    0% {
+        transform: rotate(0)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.btn-loading .fa {
+    animation: loading_rotate 2s linear infinite;
+}
+body .swal2-popup {
+    font-size: 1.4rem;
+}

@@ -1,0 +1,1157 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class AdminOperationLogTableSeeder extends Seeder
+{
+
+    /**
+     * Auto generated seed file
+     *
+     * @return void
+     */
+    public function run()
+    {
+        
+
+        \DB::table('admin_operation_log')->delete();
+        
+        \DB::table('admin_operation_log')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
+                'user_id' => 1,
+                'path' => 'admin',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 10:11:34',
+                'updated_at' => '2018-10-29 10:11:34',
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 10:11:42',
+                'updated_at' => '2018-10-29 10:11:42',
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 10:14:24',
+                'updated_at' => '2018-10-29 10:14:24',
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:15:51',
+                'updated_at' => '2018-10-29 18:15:51',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:16:48',
+                'updated_at' => '2018-10-29 18:16:48',
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:16:52',
+                'updated_at' => '2018-10-29 18:16:52',
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:21:05',
+                'updated_at' => '2018-10-29 18:21:05',
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:21:08',
+                'updated_at' => '2018-10-29 18:21:08',
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:21:09',
+                'updated_at' => '2018-10-29 18:21:09',
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:21:11',
+                'updated_at' => '2018-10-29 18:21:11',
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:21:51',
+                'updated_at' => '2018-10-29 18:21:51',
+            ),
+            11 => 
+            array (
+                'id' => 12,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:22:36',
+                'updated_at' => '2018-10-29 18:22:36',
+            ),
+            12 => 
+            array (
+                'id' => 13,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:23:58',
+                'updated_at' => '2018-10-29 18:23:58',
+            ),
+            13 => 
+            array (
+                'id' => 14,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:25:07',
+                'updated_at' => '2018-10-29 18:25:07',
+            ),
+            14 => 
+            array (
+                'id' => 15,
+                'user_id' => 1,
+                'path' => 'admin/redis',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:25:10',
+                'updated_at' => '2018-10-29 18:25:10',
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'user_id' => 1,
+                'path' => 'admin/scheduling',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:25:12',
+                'updated_at' => '2018-10-29 18:25:12',
+            ),
+            16 => 
+            array (
+                'id' => 17,
+                'user_id' => 1,
+                'path' => 'admin/logs',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:25:13',
+                'updated_at' => '2018-10-29 18:25:13',
+            ),
+            17 => 
+            array (
+                'id' => 18,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:25:16',
+                'updated_at' => '2018-10-29 18:25:16',
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:52:27',
+                'updated_at' => '2018-10-29 18:52:27',
+            ),
+            19 => 
+            array (
+                'id' => 20,
+                'user_id' => 1,
+                'path' => 'admin/auth/permissions',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:52:41',
+                'updated_at' => '2018-10-29 18:52:41',
+            ),
+            20 => 
+            array (
+                'id' => 21,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:52:49',
+                'updated_at' => '2018-10-29 18:52:49',
+            ),
+            21 => 
+            array (
+                'id' => 22,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu/12',
+                'method' => 'DELETE',
+                'ip' => '192.168.10.1',
+                'input' => '{"_method":"delete","_token":"NtmTByQxU9cpYsuyM9AYsYTKvzNWhPJw6e6Yi9AI"}',
+                'created_at' => '2018-10-29 18:52:53',
+                'updated_at' => '2018-10-29 18:52:53',
+            ),
+            22 => 
+            array (
+                'id' => 23,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:52:54',
+                'updated_at' => '2018-10-29 18:52:54',
+            ),
+            23 => 
+            array (
+                'id' => 24,
+                'user_id' => 1,
+                'path' => 'admin/auth/permissions',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:52:56',
+                'updated_at' => '2018-10-29 18:52:56',
+            ),
+            24 => 
+            array (
+                'id' => 25,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:52:58',
+                'updated_at' => '2018-10-29 18:52:58',
+            ),
+            25 => 
+            array (
+                'id' => 26,
+                'user_id' => 1,
+                'path' => 'admin/auth/permissions',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:52:59',
+                'updated_at' => '2018-10-29 18:52:59',
+            ),
+            26 => 
+            array (
+                'id' => 27,
+                'user_id' => 1,
+                'path' => 'admin/auth/permissions',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:53:44',
+                'updated_at' => '2018-10-29 18:53:44',
+            ),
+            27 => 
+            array (
+                'id' => 28,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:53:48',
+                'updated_at' => '2018-10-29 18:53:48',
+            ),
+            28 => 
+            array (
+                'id' => 29,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:53:50',
+                'updated_at' => '2018-10-29 18:53:50',
+            ),
+            29 => 
+            array (
+                'id' => 30,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:54:33',
+                'updated_at' => '2018-10-29 18:54:33',
+            ),
+            30 => 
+            array (
+                'id' => 31,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:54:36',
+                'updated_at' => '2018-10-29 18:54:36',
+            ),
+            31 => 
+            array (
+                'id' => 32,
+                'user_id' => 1,
+                'path' => 'admin/auth/menu',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:54:47',
+                'updated_at' => '2018-10-29 18:54:47',
+            ),
+            32 => 
+            array (
+                'id' => 33,
+                'user_id' => 1,
+                'path' => 'admin',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:54:51',
+                'updated_at' => '2018-10-29 18:54:51',
+            ),
+            33 => 
+            array (
+                'id' => 34,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 18:54:57',
+                'updated_at' => '2018-10-29 18:54:57',
+            ),
+            34 => 
+            array (
+                'id' => 35,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'PUT',
+                'ip' => '192.168.10.1',
+                'input' => '{"name":"Administrator","password":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","password_confirmation":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","_token":"NtmTByQxU9cpYsuyM9AYsYTKvzNWhPJw6e6Yi9AI","after-save":"2","_method":"PUT","_previous_":"http:\\/\\/laravel.test\\/admin\\/"}',
+                'created_at' => '2018-10-29 18:56:58',
+                'updated_at' => '2018-10-29 18:56:58',
+            ),
+            35 => 
+            array (
+                'id' => 36,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 18:56:59',
+                'updated_at' => '2018-10-29 18:56:59',
+            ),
+            36 => 
+            array (
+                'id' => 37,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 19:03:42',
+                'updated_at' => '2018-10-29 19:03:42',
+            ),
+            37 => 
+            array (
+                'id' => 38,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 19:03:55',
+                'updated_at' => '2018-10-29 19:03:55',
+            ),
+            38 => 
+            array (
+                'id' => 39,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 19:05:53',
+                'updated_at' => '2018-10-29 19:05:53',
+            ),
+            39 => 
+            array (
+                'id' => 40,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 19:06:25',
+                'updated_at' => '2018-10-29 19:06:25',
+            ),
+            40 => 
+            array (
+                'id' => 41,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'PUT',
+                'ip' => '192.168.10.1',
+                'input' => '{"name":"Administrator","password":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","password_confirmation":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","_token":"NtmTByQxU9cpYsuyM9AYsYTKvzNWhPJw6e6Yi9AI","_method":"PUT","_previous_":"http:\\/\\/laravel.test\\/admin\\/auth\\/login"}',
+                'created_at' => '2018-10-29 19:07:12',
+                'updated_at' => '2018-10-29 19:07:12',
+            ),
+            41 => 
+            array (
+                'id' => 42,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 19:07:12',
+                'updated_at' => '2018-10-29 19:07:12',
+            ),
+            42 => 
+            array (
+                'id' => 43,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'PUT',
+                'ip' => '192.168.10.1',
+                'input' => '{"name":"Administrator","password":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","password_confirmation":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","_token":"NtmTByQxU9cpYsuyM9AYsYTKvzNWhPJw6e6Yi9AI","_method":"PUT"}',
+                'created_at' => '2018-10-29 19:07:52',
+                'updated_at' => '2018-10-29 19:07:52',
+            ),
+            43 => 
+            array (
+                'id' => 44,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 19:07:52',
+                'updated_at' => '2018-10-29 19:07:52',
+            ),
+            44 => 
+            array (
+                'id' => 45,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'PUT',
+                'ip' => '192.168.10.1',
+                'input' => '{"name":"Administrator","password":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","password_confirmation":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","_token":"NtmTByQxU9cpYsuyM9AYsYTKvzNWhPJw6e6Yi9AI","_method":"PUT"}',
+                'created_at' => '2018-10-29 19:08:07',
+                'updated_at' => '2018-10-29 19:08:07',
+            ),
+            45 => 
+            array (
+                'id' => 46,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 19:08:08',
+                'updated_at' => '2018-10-29 19:08:08',
+            ),
+            46 => 
+            array (
+                'id' => 47,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'PUT',
+                'ip' => '192.168.10.1',
+                'input' => '{"name":"Administrator","password":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","password_confirmation":"$2y$10$V1BhyVFbChhFNJ8Yeu\\/8.ulfU6pF2f8LIiPb5zzrqYLbaOzmwZaEG","_token":"NtmTByQxU9cpYsuyM9AYsYTKvzNWhPJw6e6Yi9AI","_method":"PUT"}',
+                'created_at' => '2018-10-29 19:08:32',
+                'updated_at' => '2018-10-29 19:08:32',
+            ),
+            47 => 
+            array (
+                'id' => 48,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 19:08:32',
+                'updated_at' => '2018-10-29 19:08:32',
+            ),
+            48 => 
+            array (
+                'id' => 49,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:09:24',
+                'updated_at' => '2018-10-29 20:09:24',
+            ),
+            49 => 
+            array (
+                'id' => 50,
+                'user_id' => 1,
+                'path' => 'admin',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:09:30',
+                'updated_at' => '2018-10-29 20:09:30',
+            ),
+            50 => 
+            array (
+                'id' => 51,
+                'user_id' => 1,
+                'path' => 'admin',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:12:13',
+                'updated_at' => '2018-10-29 20:12:13',
+            ),
+            51 => 
+            array (
+                'id' => 52,
+                'user_id' => 1,
+                'path' => 'admin',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:12:15',
+                'updated_at' => '2018-10-29 20:12:15',
+            ),
+            52 => 
+            array (
+                'id' => 53,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:12:18',
+                'updated_at' => '2018-10-29 20:12:18',
+            ),
+            53 => 
+            array (
+                'id' => 54,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:12:19',
+                'updated_at' => '2018-10-29 20:12:19',
+            ),
+            54 => 
+            array (
+                'id' => 55,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:12:24',
+                'updated_at' => '2018-10-29 20:12:24',
+            ),
+            55 => 
+            array (
+                'id' => 56,
+                'user_id' => 1,
+                'path' => 'admin/auth/logout',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:12:26',
+                'updated_at' => '2018-10-29 20:12:26',
+            ),
+            56 => 
+            array (
+                'id' => 57,
+                'user_id' => 1,
+                'path' => 'admin',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:12:30',
+                'updated_at' => '2018-10-29 20:12:30',
+            ),
+            57 => 
+            array (
+                'id' => 58,
+                'user_id' => 1,
+                'path' => 'admin/auth/roles',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:12:54',
+                'updated_at' => '2018-10-29 20:12:54',
+            ),
+            58 => 
+            array (
+                'id' => 59,
+                'user_id' => 1,
+                'path' => 'admin/auth/roles',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:16:05',
+                'updated_at' => '2018-10-29 20:16:05',
+            ),
+            59 => 
+            array (
+                'id' => 60,
+                'user_id' => 1,
+                'path' => 'admin/auth/roles',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:16:13',
+                'updated_at' => '2018-10-29 20:16:13',
+            ),
+            60 => 
+            array (
+                'id' => 61,
+                'user_id' => 1,
+                'path' => 'admin/auth/roles',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:16:34',
+                'updated_at' => '2018-10-29 20:16:34',
+            ),
+            61 => 
+            array (
+                'id' => 62,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:16:38',
+                'updated_at' => '2018-10-29 20:16:38',
+            ),
+            62 => 
+            array (
+                'id' => 63,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:16:39',
+                'updated_at' => '2018-10-29 20:16:39',
+            ),
+            63 => 
+            array (
+                'id' => 64,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:16:40',
+                'updated_at' => '2018-10-29 20:16:40',
+            ),
+            64 => 
+            array (
+                'id' => 65,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:17:57',
+                'updated_at' => '2018-10-29 20:17:57',
+            ),
+            65 => 
+            array (
+                'id' => 66,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:18:02',
+                'updated_at' => '2018-10-29 20:18:02',
+            ),
+            66 => 
+            array (
+                'id' => 67,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:18:43',
+                'updated_at' => '2018-10-29 20:18:43',
+            ),
+            67 => 
+            array (
+                'id' => 68,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:18:46',
+                'updated_at' => '2018-10-29 20:18:46',
+            ),
+            68 => 
+            array (
+                'id' => 69,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:18:51',
+                'updated_at' => '2018-10-29 20:18:51',
+            ),
+            69 => 
+            array (
+                'id' => 70,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:18:52',
+                'updated_at' => '2018-10-29 20:18:52',
+            ),
+            70 => 
+            array (
+                'id' => 71,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:19:06',
+                'updated_at' => '2018-10-29 20:19:06',
+            ),
+            71 => 
+            array (
+                'id' => 72,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:19:14',
+                'updated_at' => '2018-10-29 20:19:14',
+            ),
+            72 => 
+            array (
+                'id' => 73,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:19:52',
+                'updated_at' => '2018-10-29 20:19:52',
+            ),
+            73 => 
+            array (
+                'id' => 74,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:19:54',
+                'updated_at' => '2018-10-29 20:19:54',
+            ),
+            74 => 
+            array (
+                'id' => 75,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:19:57',
+                'updated_at' => '2018-10-29 20:19:57',
+            ),
+            75 => 
+            array (
+                'id' => 76,
+                'user_id' => 1,
+                'path' => 'admin/config',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:20:47',
+                'updated_at' => '2018-10-29 20:20:47',
+            ),
+            76 => 
+            array (
+                'id' => 77,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:20:52',
+                'updated_at' => '2018-10-29 20:20:52',
+            ),
+            77 => 
+            array (
+                'id' => 78,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:21:00',
+                'updated_at' => '2018-10-29 20:21:00',
+            ),
+            78 => 
+            array (
+                'id' => 79,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:21:22',
+                'updated_at' => '2018-10-29 20:21:22',
+            ),
+            79 => 
+            array (
+                'id' => 80,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:21:29',
+                'updated_at' => '2018-10-29 20:21:29',
+            ),
+            80 => 
+            array (
+                'id' => 81,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:21:31',
+                'updated_at' => '2018-10-29 20:21:31',
+            ),
+            81 => 
+            array (
+                'id' => 82,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:21:38',
+                'updated_at' => '2018-10-29 20:21:38',
+            ),
+            82 => 
+            array (
+                'id' => 83,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:21:59',
+                'updated_at' => '2018-10-29 20:21:59',
+            ),
+            83 => 
+            array (
+                'id' => 84,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:22:05',
+                'updated_at' => '2018-10-29 20:22:05',
+            ),
+            84 => 
+            array (
+                'id' => 85,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:22:12',
+                'updated_at' => '2018-10-29 20:22:12',
+            ),
+            85 => 
+            array (
+                'id' => 86,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:22:34',
+                'updated_at' => '2018-10-29 20:22:34',
+            ),
+            86 => 
+            array (
+                'id' => 87,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:22:46',
+                'updated_at' => '2018-10-29 20:22:46',
+            ),
+            87 => 
+            array (
+                'id' => 88,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:22:51',
+                'updated_at' => '2018-10-29 20:22:51',
+            ),
+            88 => 
+            array (
+                'id' => 89,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:27:51',
+                'updated_at' => '2018-10-29 20:27:51',
+            ),
+            89 => 
+            array (
+                'id' => 90,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:27:56',
+                'updated_at' => '2018-10-29 20:27:56',
+            ),
+            90 => 
+            array (
+                'id' => 91,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:28:01',
+                'updated_at' => '2018-10-29 20:28:01',
+            ),
+            91 => 
+            array (
+                'id' => 92,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:28:04',
+                'updated_at' => '2018-10-29 20:28:04',
+            ),
+            92 => 
+            array (
+                'id' => 93,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:28:07',
+                'updated_at' => '2018-10-29 20:28:07',
+            ),
+            93 => 
+            array (
+                'id' => 94,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-29 20:28:08',
+                'updated_at' => '2018-10-29 20:28:08',
+            ),
+            94 => 
+            array (
+                'id' => 95,
+                'user_id' => 1,
+                'path' => 'admin/auth/setting',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:28:12',
+                'updated_at' => '2018-10-29 20:28:12',
+            ),
+            95 => 
+            array (
+                'id' => 96,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:28:14',
+                'updated_at' => '2018-10-29 20:28:14',
+            ),
+            96 => 
+            array (
+                'id' => 97,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:28:15',
+                'updated_at' => '2018-10-29 20:28:15',
+            ),
+            97 => 
+            array (
+                'id' => 98,
+                'user_id' => 1,
+                'path' => 'admin/auth/users',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:28:18',
+                'updated_at' => '2018-10-29 20:28:18',
+            ),
+            98 => 
+            array (
+                'id' => 99,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '{"_pjax":"#pjax-container"}',
+                'created_at' => '2018-10-29 20:28:19',
+                'updated_at' => '2018-10-29 20:28:19',
+            ),
+            99 => 
+            array (
+                'id' => 100,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-30 04:16:12',
+                'updated_at' => '2018-10-30 04:16:12',
+            ),
+            100 => 
+            array (
+                'id' => 101,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-30 05:00:39',
+                'updated_at' => '2018-10-30 05:00:39',
+            ),
+            101 => 
+            array (
+                'id' => 102,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-30 05:00:45',
+                'updated_at' => '2018-10-30 05:00:45',
+            ),
+            102 => 
+            array (
+                'id' => 103,
+                'user_id' => 1,
+                'path' => 'admin/auth/users/1/edit',
+                'method' => 'GET',
+                'ip' => '192.168.10.1',
+                'input' => '[]',
+                'created_at' => '2018-10-30 05:03:41',
+                'updated_at' => '2018-10-30 05:03:41',
+            ),
+        ));
+        
+        
+    }
+}
