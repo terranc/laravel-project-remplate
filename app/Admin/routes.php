@@ -2,7 +2,7 @@
 
 use Illuminate\Routing\Router;
 
-Admin::registerAuthRoutes();
+Admin::routes();
 
 Route::group([
     'prefix'        => config('admin.route.prefix'),
@@ -10,7 +10,6 @@ Route::group([
     'middleware'    => config('admin.route.middleware'),
 ], function (Router $router) {
 
-    $router->get('/', 'HomeController@index');
-    $router->get('/auth/setting', 'AuthController@getSetting');
+    $router->get('/', 'HomeController@index')->name('admin.home');
 
 });

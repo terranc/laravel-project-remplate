@@ -18,7 +18,4 @@
  *
  */
 
-Admin::css('/css/admin-custom.css');
-Admin::js("js/admin-custom.js");
 Encore\Admin\Form::forget(['map', 'editor']);
-app('view')->prependNamespace('admin', resource_path('views/admin/laravel-admin'));

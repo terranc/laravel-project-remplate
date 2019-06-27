@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Laravel-admin',
+    'name' => 'XXXXX',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>Laravel</b> admin',
+    'logo' => '<strong>XXX</strong>XXXXX',
 
     /*
     |--------------------------------------------------------------------------
@@ -35,7 +35,15 @@ return [
     |
     */
     'logo-mini' => '<b>La</b>',
-
+    /*
+        |--------------------------------------------------------------------------
+        | Laravel-admin bootstrap setting
+        |--------------------------------------------------------------------------
+        |
+        | This value is the path of laravel-admin bootstrap file.
+        |
+        */
+    'bootstrap' => app_path('Admin/bootstrap.php'),
     /*
     |--------------------------------------------------------------------------
     | Laravel-admin route settings
@@ -48,11 +56,11 @@ return [
     */
     'route' => [
 
-        'prefix' => 'admin',
+        'prefix' => env('ADMIN_ROUTE_PREFIX', 'admin'),
 
         'namespace' => 'App\\Admin\\Controllers',
 
-        'middleware' => ['web', 'admin'],
+        'middleware' => ['web', 'admin', 'multi-session:path,/admin'],
     ],
 
     /*
@@ -99,9 +107,10 @@ return [
     |
     */
     'auth' => [
-
         'controller' => App\Admin\Controllers\AuthController::class,
 
+        'guard' => 'admin',
+        
         'guards' => [
             'admin' => [
                 'driver'   => 'session',
@@ -114,6 +123,18 @@ return [
                 'driver' => 'eloquent',
                 'model'  => Encore\Admin\Auth\Database\Administrator::class,
             ],
+        ],
+
+        // Add "remember me" to login form
+        'remember' => true,
+
+        // Redirect to the specified URI when user is not authorized.
+        'redirect_to' => 'auth/login',
+        // The URIs that should be excluded from authorization.
+        'excepts' => [
+            'auth/login',
+            'auth/logout',
+            'group_statistics',
         ],
     ],
 
@@ -128,13 +149,12 @@ return [
     */
     'upload' => [
 
-        // Disk in `config/filesystem.php`.
-        'disk' => 'admin',
 
-        // Image and file upload path under the disk above.
-        'directory' => [
-            'image' => 'images',
-            'file'  => 'files',
+        'disk' => 'public',
+
+        'directory'  => [
+            'image'  => 'images',
+            'file'   => 'files',
         ],
     ],
 
@@ -185,12 +205,7 @@ return [
     */
     'operation_log' => [
 
-        'enable' => true,
-
-        /*
-         * Only logging allowed methods in the list
-         */
-        'allowed_methods' => ['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'TRACE', 'PATCH'],
+        'enable' => false,
 
         /*
          * Routes that will not log to database.
@@ -202,7 +217,15 @@ return [
             'admin/auth/logs*',
         ],
     ],
-
+    /*
+        |--------------------------------------------------------------------------
+        | User default avatar
+        |--------------------------------------------------------------------------
+        |
+        | Set a default avatar for newly created users.
+        |
+        */
+    'default_avatar' => '/vendor/laravel-admin/AdminLTE/dist/img/user2-160x160.jpg',
     /*
     |--------------------------------------------------------------------------
     | Admin map field provider
@@ -219,7 +242,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This value is the skin of admin pages.
-    | @see https://adminlte.io/docs/2.4/layout
+    | @see https://adminlte.io/docs/2.4/skin
     |
     | Supported:
     |    "skin-blue", "skin-blue-light", "skin-yellow", "skin-yellow-light",
@@ -227,7 +250,7 @@ return [
     |    "skin-red", "skin-red-light", "skin-black", "skin-black-light".
     |
     */
-    'skin' => 'skin-blue-light',
+    'skin' => 'skin-black-light',
 
     /*
     |--------------------------------------------------------------------------
@@ -241,7 +264,7 @@ return [
     | "sidebar-mini".
     |
     */
-    'layout' => ['sidebar-mini'],
+    'layout' => ['sidebar-mini', 'fixed'],
 
     /*
     |--------------------------------------------------------------------------
@@ -251,18 +274,18 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => '',
+    'login_background_image' => 'https://wechat.heiwado.cn/assets/admin/images/bg_login.jpg',
 
     /*
     |--------------------------------------------------------------------------
     | Show version at footer
     |--------------------------------------------------------------------------
     |
-    | Whether to display the version number of laravel-admim at the footer of
+    | Whether to display the version number of laravel-admin at the footer of
     | each page
     |
     */
-    'show_version' => true,
+    'show_version' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -272,8 +295,7 @@ return [
     | Whether to display the environment at the footer of each page
     |
     */
-    'show_environment' => true,
-
+    'show_environment' => false,
     /*
     |--------------------------------------------------------------------------
     | Menu bind to permission
@@ -282,7 +304,6 @@ return [
     | whether enable menu bind to a permission
     */
     'menu_bind_permission' => true,
-
     /*
     |--------------------------------------------------------------------------
     | Enable default breadcrumb
@@ -290,8 +311,23 @@ return [
     |
     | Whether enable default breadcrumb for every page content.
     */
-    'enable_default_breadcrumb' => false,
-
+    'enable_default_breadcrumb' => true,
+    /*
+    |--------------------------------------------------------------------------
+    | Enable/Disable assets minify
+    |--------------------------------------------------------------------------
+    */
+    'minify_assets' => [
+        // Assets will not be minified.
+        'excepts' => [
+        ],
+    ],
+    /*
+    |--------------------------------------------------------------------------
+    | Enable/Disable sidebar menu search
+    |------------------------------------------minify_assets--------------------------------
+    */
+    'enable_menu_search' => false,
     /*
     |--------------------------------------------------------------------------
     | Extension Directory
@@ -300,7 +336,7 @@ return [
     | When you use command `php artisan admin:extend` to generate extensions,
     | the extension files will be generated in this directory.
     */
-    'extension_dir' => app_path('Admin/Extensions'),
+    'extension_dir' => app_path('Admin/extensions'),
 
     /*
     |--------------------------------------------------------------------------
@@ -313,5 +349,8 @@ return [
     */
     'extensions' => [
 
+//        'multitenancy' => [
+//            'merchant' => config_path('merchant.php'),
+//        ],
     ],
 ];
